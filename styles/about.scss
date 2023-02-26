@@ -13,6 +13,7 @@ main {
     box-shadow: 0.5px 0.5px 15px 1px #f5f4f4;
     margin: 3.3rem auto;
     width: 60%;
+    max-width: 700px;
 
     img {
       width: 100%;
@@ -20,8 +21,7 @@ main {
   }
 
   .crow-description {
-    margin: auto;
-    margin-top: 5.5rem;
+    margin: 4rem auto;
     width: 60%;
 
     font-size: 1.2rem;

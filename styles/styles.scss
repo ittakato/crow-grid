@@ -1,13 +1,13 @@
 @use './global';
 @use './normalize';
+@use './shared';
 
 @use './mixins' as m;
 
 .project-grid {
-  margin: auto;
+  grid-row: 2 / span 1;
 
   width: 100%;
-  max-width: 93%;
 
   display: grid;
   gap: 0.65rem;

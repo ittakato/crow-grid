@@ -12,4 +12,7 @@ function animateHamburger(): void {
 }
 
 hamburger?.addEventListener('touchstart', animateHamburger);
+hamburger?.addEventListener('touchend', animateHamburger);
+hamburger?.addEventListener('touchcancel', animateHamburger);
+hamburger?.addEventListener('touchmove', animateHamburger);
 hamburger?.addEventListener('click', animateHamburger);

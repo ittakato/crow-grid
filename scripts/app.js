@@ -11,4 +11,7 @@ function animateHamburger() {
     mobileNav === null || mobileNav === void 0 ? void 0 : mobileNav.classList.toggle('open-mobile-nav');
 }
 hamburger === null || hamburger === void 0 ? void 0 : hamburger.addEventListener('touchstart', animateHamburger);
+hamburger === null || hamburger === void 0 ? void 0 : hamburger.addEventListener('touchend', animateHamburger);
+hamburger === null || hamburger === void 0 ? void 0 : hamburger.addEventListener('touchcancel', animateHamburger);
+hamburger === null || hamburger === void 0 ? void 0 : hamburger.addEventListener('touchmove', animateHamburger);
 hamburger === null || hamburger === void 0 ? void 0 : hamburger.addEventListener('click', animateHamburger);

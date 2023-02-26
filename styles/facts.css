@@ -338,10 +338,15 @@ template {
 }
 
 .body-container {
+  height: 100%;
   max-width: 93%;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 128px 1fr 80px;
+  grid-template-rows: 128px auto 80px;
+}
+
+main {
+  grid-row: 2/span 1;
 }
 
 .footer {
@@ -431,8 +436,8 @@ template {
 
 @media only screen and (max-width: 768px) {
   .body-container {
-    margin-top: 8rem;
-    grid-template-rows: 4.5rem 1fr 5rem;
+    margin-top: 3rem;
+    grid-template-rows: 4.5rem auto 5rem;
   }
   .project-grid {
     margin-top: 3rem;
@@ -458,6 +463,9 @@ template {
   }
   .navbar .hamburger:hover {
     cursor: pointer;
+  }
+  .footer {
+    font-size: 0.9rem;
   }
 }
 .animateBar1 {
@@ -508,6 +516,11 @@ main h1 {
 main .fun-facts-list {
   padding: 5rem 3rem;
 }
+@media only screen and (max-width: 768px) {
+  main .fun-facts-list {
+    padding: 2rem 3rem;
+  }
+}
 main .fun-facts-list li {
   margin-bottom: 3rem;
   font-size: 1.4rem;
@@ -530,11 +543,30 @@ main .fun-facts-list li .fun-fact-image-container {
   margin-bottom: 8rem;
   max-width: 900px;
 }
+@media only screen and (max-width: 768px) {
+  main .fun-facts-list li .fun-fact-image-container {
+    margin-bottom: 4rem;
+  }
+}
 main .fun-facts-list li .fun-fact-image-container img {
   width: 100%;
 }
 main .fun-facts-list li:nth-of-type(2) img, main .fun-facts-list li:nth-of-type(3) img {
   width: 90%;
+}
+
+@media only screen and (max-width: 768px) {
+  .crow-description {
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+  }
+  #nutcracking,
+  #talking,
+  #preening {
+    position: relative;
+    top: -250px;
+  }
 }
 
 /*# sourceMappingURL=facts.css.map */

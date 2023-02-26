@@ -1,9 +1,14 @@
 .body-container {
+  height: 100%;
   max-width: 93%;
   margin: 0 auto;
 
   display: grid;
-  grid-template-rows: 128px 1fr 80px;
+  grid-template-rows: 128px auto 80px;
+}
+
+main {
+  grid-row: 2 / span 1;
 }
 
 .footer {
@@ -113,8 +118,8 @@
 
 @media only screen and (max-width: 768px) {
   .body-container {
-    margin-top: 8rem;
-    grid-template-rows: 4.5rem 1fr 5rem;
+    margin-top: 3rem;
+    grid-template-rows: 4.5rem auto 5rem;
   }
 
   .project-grid {
@@ -146,6 +151,10 @@
         cursor: pointer;
       }
     }
+  }
+
+  .footer {
+    font-size: 0.9rem;
   }
 }
 

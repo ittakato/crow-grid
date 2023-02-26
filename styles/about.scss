@@ -38,3 +38,11 @@ main {
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .crow-description {
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+  }
+}

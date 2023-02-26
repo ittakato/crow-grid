@@ -431,6 +431,7 @@ template {
 
 @media only screen and (max-width: 768px) {
   .body-container {
+    margin-top: 8rem;
     grid-template-rows: 4.5rem 1fr 5rem;
   }
   .project-grid {
@@ -512,6 +513,7 @@ main .crow-image-container img {
 }
 main .crow-description {
   margin: auto;
+  margin-top: 5.5rem;
   width: 60%;
   font-size: 1.2rem;
   font-weight: 300;

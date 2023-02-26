@@ -431,6 +431,7 @@ template {
 
 @media only screen and (max-width: 768px) {
   .body-container {
+    margin-top: 8rem;
     grid-template-rows: 4.5rem 1fr 5rem;
   }
   .project-grid {
@@ -585,6 +586,12 @@ template {
 @media only screen and (max-width: 768px) {
   .project .overlay {
     font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .body-container {
+    margin-top: 4rem;
   }
 }
 
